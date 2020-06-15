@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.main.ShutDownActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Shut Down ......"
+            android:textColor="#000000"
+            android:textSize="48dip"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dip"
+            android:layout_marginTop="15dip"
+            android:layout_marginRight="15dip"
+            android:text="Thanks for your using TRIUMPH SYSTEM Summary:"
+            android:textColor="#000000"
+            android:textSize="24dip"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/train_duration"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dip"
+            android:layout_marginTop="15dip"
+            android:layout_marginRight="15dip"
+            android:text="Training Duration 2 hours 26 minutes"
+            android:textColor="#000000"
+            android:textSize="24dip"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/train_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dip"
+            android:layout_marginTop="15dip"
+            android:layout_marginRight="15dip"
+            android:text="Total training time 10 hours 42 minutes"
+            android:textColor="#000000"
+            android:textSize="24dip"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dip"
+            android:layout_marginTop="15dip"
+            android:layout_marginRight="15dip"
+            android:text="More practise,More stronger !"
+            android:textColor="#000000"
+            android:textSize="24dip"
+            android:textStyle="bold" />
+    </LinearLayout>
+</RelativeLayout>

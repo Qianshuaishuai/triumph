@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context=".ui.profile.SettingActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dip"
+            android:gravity="center_horizontal"
+            android:text="SUMMARY"
+            android:textColor="#ffffff"
+            android:textSize="48dip"
+            android:textStyle="bold" />
+        <!--主要部分1-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dip"
+            android:orientation="horizontal">
+
+            <!--motor-->
+            <LinearLayout
+                android:id="@+id/layout_motor"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/motor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dip"
+                    android:gravity="center_horizontal"
+                    android:text="1"
+                    android:textColor="#3CB371"
+                    android:textSize="24dip"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dip"
+                    android:gravity="center_horizontal"
+                    android:text="MOTOR"
+                    android:textColor="#ffffff"
+                    android:textSize="24dip"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <!--exposure_time-->
+            <LinearLayout
+                android:id="@+id/layout_exposure_time"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/exposure_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dip"
+                    android:gravity="center_horizontal"
+                    android:text="0.3"
+                    android:textColor="#3CB371"
+                    android:textSize="24dip"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dip"
+                    android:gravity="center_horizontal"
+                    android:text="EXPOSURE_TIME"
+                    android:textColor="#ffffff"
+                    android:textSize="24dip"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <!--edge_time-->
+            <LinearLayout
+                android:id="@+id/layout_edge_time"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/edge_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dip"
+                    android:gravity="center_horizontal"
+                    android:text="5.6"
+                    android:textColor="#3CB371"
+                    android:textSize="24dip"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dip"
+                    android:gravity="center_horizontal"
+                    android:text="EDGE_TIME"
+                    android:textColor="#ffffff"
+                    android:textSize="24dip"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <!--turn_direction-->
+            <LinearLayout
+                android:id="@+id/layout_turn_direction"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/turn_direction"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dip"
+                    android:gravity="center_horizontal"
+                    android:text="5.6"
+                    android:textColor="#3CB371"
+                    android:textSize="24dip"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dip"
+                    android:gravity="center_horizontal"
+                    android:text="TURN_DIRECTION"
+                    android:textColor="#ffffff"
+                    android:textSize="24dip"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+        <!--主要部分2-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dip"
+            android:orientation="horizontal">
+
+            <!--mode-->
+            <LinearLayout
+                android:id="@+id/layout_mode"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/mode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dip"
+                    android:gravity="center_horizontal"
+                    android:text="A"
+                    android:textColor="#3CB371"
+                    android:textSize="24dip"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dip"
+                    android:gravity="center_horizontal"
+                    android:text="MODE"
+                    android:textColor="#ffffff"
+                    android:textSize="24dip"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <!--turn_degree-->
+            <LinearLayout
+                android:id="@+id/layout_turn_degree"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/turn_degree"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dip"
+                    android:gravity="center_horizontal"
+                    android:text="90℃"
+                    android:textColor="#3CB371"
+                    android:textSize="24dip"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dip"
+                    android:gravity="center_horizontal"
+                    android:text="TURN_DEGREE"
+                    android:textColor="#ffffff"
+                    android:textSize="24dip"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <!--start_position-->
+            <LinearLayout
+                android:id="@+id/layout_start_position"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/start_position"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dip"
+                    android:gravity="center_horizontal"
+                    android:text="A"
+                    android:textColor="#3CB371"
+                    android:textSize="24dip"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dip"
+                    android:gravity="center_horizontal"
+                    android:text="START_POSITION"
+                    android:textColor="#ffffff"
+                    android:textSize="24dip"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <!--turn_frequency-->
+            <LinearLayout
+                android:id="@+id/layout_turn_frequency"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/turn_frequency"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dip"
+                    android:gravity="center_horizontal"
+                    android:text="LOOP"
+                    android:textColor="#3CB371"
+                    android:textSize="24dip"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dip"
+                    android:gravity="center_horizontal"
+                    android:text="TURN_FREQUENCY"
+                    android:textColor="#ffffff"
+                    android:textSize="24dip"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="15dip"
+        android:layout_marginRight="15dip"
+        android:layout_marginBottom="15dip">
+
+        <TextView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Go back"
+            android:textColor="#3CB371"
+            android:textSize="24dip"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/reset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Reset"
+            android:textColor="#3CB371"
+            android:textSize="24dip"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+</RelativeLayout>

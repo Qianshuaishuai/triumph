@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context=".ui.other.AboutActivity">
+
+    <TextView
+        android:id="@+id/tip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dip"
+        android:gravity="center_horizontal"
+        android:text="ABOUT"
+        android:textColor="#ffffff"
+        android:textSize="48dip"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tip2"
+        android:layout_width="450dip"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tip"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dip"
+        android:gravity="center_horizontal"
+        android:text="SERIAL NUMBER:21041027"
+        android:textColor="#ffffff"
+        android:textSize="24dip"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tip3"
+        android:layout_width="450dip"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tip2"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal"
+        android:text="VERSION:3.0.1.2.7"
+        android:textColor="#ffffff"
+        android:textSize="24dip"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tip4"
+        android:layout_width="450dip"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tip3"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal"
+        android:text="TRIUMPH SYSTEMS,INC"
+        android:textColor="#ffffff"
+        android:textSize="24dip"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tip5"
+        android:layout_width="450dip"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tip4"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal"
+        android:text="COPYRIGHT,ALL RIGHTS RESERVED"
+        android:textColor="#ffffff"
+        android:textSize="24dip"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tip6"
+        android:layout_width="450dip"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tip5"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal"
+        android:text="PATENT NUMBER:10,295,315"
+        android:textColor="#ffffff"
+        android:textSize="24dip"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="15dip"
+        android:layout_marginRight="15dip"
+        android:layout_marginBottom="15dip">
+
+        <TextView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Go back"
+            android:textColor="#ffffff"
+            android:textSize="24dip"
+            android:textStyle="bold" />
+    </RelativeLayout>
+</RelativeLayout>

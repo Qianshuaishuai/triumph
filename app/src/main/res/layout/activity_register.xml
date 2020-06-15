@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.user.RegisterActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Register"
+            android:textColor="#000000"
+            android:textSize="48dip"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dip"
+            android:layout_marginTop="15dip"
+            android:layout_marginRight="15dip"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="User Name"
+                android:textColor="#000000"
+                android:textSize="24dip"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/username"
+                android:layout_width="match_parent"
+                android:layout_height="48dip"
+                android:layout_marginLeft="18dip"
+                android:background="@drawable/shape_editor_background"
+                android:gravity="center_vertical"
+                android:paddingLeft="12dip"
+                android:paddingRight="12dip"
+                android:textSize="24dip" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dip"
+            android:layout_marginTop="15dip"
+            android:layout_marginRight="15dip"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Password"
+                android:textColor="#000000"
+                android:textSize="24dip"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="48dip"
+                android:layout_marginLeft="12dip"
+                android:background="@drawable/shape_editor_background"
+                android:gravity="center_vertical"
+                android:paddingLeft="12dip"
+                android:paddingRight="12dip"
+                android:textSize="24dip" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dip"
+            android:layout_marginTop="15dip"
+            android:layout_marginRight="15dip"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Confirm_password"
+                android:textColor="#000000"
+                android:textSize="24dip"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/confirm_password"
+                android:layout_width="match_parent"
+                android:layout_height="48dip"
+                android:layout_marginLeft="30dip"
+                android:background="@drawable/shape_editor_background"
+                android:gravity="center_vertical"
+                android:paddingLeft="12dip"
+                android:paddingRight="12dip"
+                android:textSize="24dip" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dip"
+            android:layout_marginTop="15dip"
+            android:layout_marginRight="15dip"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="User phone"
+                android:textColor="#000000"
+                android:textSize="24dip"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/user_phone"
+                android:layout_width="match_parent"
+                android:layout_height="48dip"
+                android:layout_marginLeft="30dip"
+                android:background="@drawable/shape_editor_background"
+                android:gravity="center_vertical"
+                android:paddingLeft="12dip"
+                android:paddingRight="12dip"
+                android:textSize="24dip" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dip"
+            android:layout_marginTop="15dip"
+            android:layout_marginRight="15dip"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="User add"
+                android:textColor="#000000"
+                android:textSize="24dip"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/user_add"
+                android:layout_width="match_parent"
+                android:layout_height="48dip"
+                android:layout_marginLeft="30dip"
+                android:background="@drawable/shape_editor_background"
+                android:gravity="center_vertical"
+                android:paddingLeft="12dip"
+                android:paddingRight="12dip"
+                android:textSize="24dip" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dip"
+            android:layout_marginTop="15dip"
+            android:layout_marginRight="15dip"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Regist date"
+                android:textColor="#000000"
+                android:textSize="24dip"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/regist_date"
+                android:layout_width="match_parent"
+                android:layout_height="48dip"
+                android:layout_marginLeft="30dip"
+                android:background="@drawable/shape_editor_background"
+                android:gravity="center_vertical"
+                android:paddingLeft="12dip"
+                android:paddingRight="12dip"
+                android:textSize="24dip" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="15dip"
+        android:layout_marginRight="15dip"
+        android:layout_marginBottom="15dip"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Go back"
+            android:textColor="#000000"
+            android:textSize="24dip"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="0dip"
+            android:layout_height="1dip"
+            android:layout_weight="1"></View>
+
+        <TextView
+            android:id="@+id/clear_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Clear all"
+            android:textColor="#000000"
+            android:textSize="24dip"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="0dip"
+            android:layout_height="1dip"
+            android:layout_weight="1"></View>
+
+        <TextView
+            android:id="@+id/regist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Regist"
+            android:textColor="#000000"
+            android:textSize="24dip"
+            android:textStyle="bold" />
+    </LinearLayout>
+</RelativeLayout>

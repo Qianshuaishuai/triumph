@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context=".ui.other.ContactActivity">
+
+    <TextView
+        android:id="@+id/tip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dip"
+        android:gravity="center_horizontal"
+        android:text="CONTACT US"
+        android:textColor="#ffffff"
+        android:textSize="48dip"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tip1"
+        android:layout_width="450dip"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tip"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dip"
+        android:gravity="center_horizontal"
+        android:text="TRIUMPH SYSTEMS,INC.710 NORTH TUCKER BLVD STE.315A SAINT LOUIS,MO 63101"
+        android:textColor="#ffffff"
+        android:textSize="24dip"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tip2"
+        android:layout_width="450dip"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tip1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dip"
+        android:gravity="center_horizontal"
+        android:text="URL: WWW.TRIUMPH-SYSTEMS.COM"
+        android:textColor="#ffffff"
+        android:textSize="24dip"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tip3"
+        android:layout_width="450dip"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tip2"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal"
+        android:text="EMAIL:INFO@TRIUMPH-SYSTEMS.COM"
+        android:textColor="#ffffff"
+        android:textSize="24dip"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tip4"
+        android:layout_width="450dip"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tip3"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal"
+        android:text="PHONE:314-882-4324"
+        android:textColor="#ffffff"
+        android:textSize="24dip"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="15dip"
+        android:layout_marginRight="15dip"
+        android:layout_marginBottom="15dip">
+
+        <TextView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Go back"
+            android:textColor="#ffffff"
+            android:textSize="24dip"
+            android:textStyle="bold" />
+    </RelativeLayout>
+</RelativeLayout>
