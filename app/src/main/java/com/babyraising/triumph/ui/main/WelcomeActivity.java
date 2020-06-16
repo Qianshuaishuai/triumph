@@ -6,6 +6,7 @@ import android.os.Bundle;
 
 import com.babyraising.triumph.R;
 import com.babyraising.triumph.TriumphApplication;
+import com.babyraising.triumph.ui.other.InfoActivity;
 
 import org.xutils.view.annotation.ContentView;
 
@@ -52,7 +53,7 @@ public class WelcomeActivity extends AppCompatActivity {
     }
 
     private void skip() {
-        Intent newIntent = new Intent(WelcomeActivity.this, HomeActivity.class);
+        Intent newIntent = new Intent(WelcomeActivity.this, InfoActivity.class);
         startActivity(newIntent);
         finish();
         //保存状态

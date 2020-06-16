@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context=".ui.other.InfoActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dip"
+            android:gravity="center"
+            android:text="PIVOTAL"
+            android:textColor="#ffffff"
+            android:textSize="72dip"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tip2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="TRAINER"
+            android:textColor="#ffffff"
+            android:textSize="72dip"
+            android:textStyle="bold" />
+
+        <view
+            android:layout_width="600dip"
+            android:layout_height="8dip"
+            android:layout_marginTop="24dip"
+            android:background="#ffffff"></view>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dip"
+            android:layout_marginBottom="8dip"
+            android:gravity="center"
+            android:text="ELITE TURNING TARGET SYSTEM"
+            android:textColor="#ffffff"
+            android:textSize="24dip"
+            android:textStyle="bold" />
+
+        <view
+            android:layout_width="600dip"
+            android:layout_height="8dip"
+            android:background="#ffffff"></view>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dip"
+            android:layout_marginBottom="8dip"
+            android:gravity="center"
+            android:text="WWW.TRIUMPH_SYSTEMS.COM"
+            android:textColor="#ffffff"
+            android:textSize="36dip"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="15dip"
+        android:layout_marginRight="15dip"
+        android:layout_marginBottom="15dip">
+
+        <TextView
+            android:id="@+id/contract"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Contact TRIUMPH"
+            android:textColor="#ffffff"
+            android:textSize="24dip"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/about"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="About"
+            android:textColor="#ffffff"
+            android:textSize="24dip"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="Next"
+            android:textColor="#ffffff"
+            android:textSize="24dip"
+            android:textStyle="bold" />
+    </RelativeLayout>
+</RelativeLayout>
