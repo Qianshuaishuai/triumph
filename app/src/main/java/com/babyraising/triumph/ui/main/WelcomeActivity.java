@@ -6,6 +6,7 @@ import android.os.Bundle;
 
 import com.babyraising.triumph.R;
 import com.babyraising.triumph.TriumphApplication;
+import com.babyraising.triumph.base.BaseActivity;
 import com.babyraising.triumph.ui.other.InfoActivity;
 
 import org.xutils.view.annotation.ContentView;
@@ -14,7 +15,7 @@ import java.util.Timer;
 import java.util.TimerTask;
 
 @ContentView(R.layout.activity_welcome)
-public class WelcomeActivity extends AppCompatActivity {
+public class WelcomeActivity extends BaseActivity {
 
     private int skipTimeCount = 5;
     private Timer timer;
