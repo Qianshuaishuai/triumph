@@ -6,6 +6,7 @@ import android.view.View;
 import android.widget.TextView;
 
 import com.babyraising.triumph.R;
+import com.babyraising.triumph.TriumphApplication;
 import com.babyraising.triumph.base.BaseActivity;
 import com.babyraising.triumph.bean.User;
 import com.babyraising.triumph.util.T;
@@ -15,6 +16,7 @@ import org.xutils.ex.DbException;
 import org.xutils.view.annotation.ContentView;
 import org.xutils.view.annotation.Event;
 import org.xutils.view.annotation.ViewInject;
+import org.xutils.x;
 
 @ContentView(R.layout.activity_forget)
 public class ForgetActivity extends BaseActivity {
@@ -31,9 +33,9 @@ public class ForgetActivity extends BaseActivity {
     @ViewInject(R.id.confirm_password)
     private TextView confirmPassword;
 
-    @Event(R.id.forget)
-    private void forget(View view) {
-        if (password.getText().toString().equals(confirmPassword.getText().toString())) {
+    @Event(R.id.confirm)
+    private void confirm(View view) {
+        if (!password.getText().toString().equals(confirmPassword.getText().toString())) {
             T.s("Two passwords are inconsistent");
             return;
         }
@@ -63,7 +65,9 @@ public class ForgetActivity extends BaseActivity {
 
     @Event(R.id.reset)
     private void reset(View view) {
-
+        userPhone.setText("");
+        password.setText("");
+        confirmPassword.setText("");
     }
 
     @Event(R.id.back)
@@ -78,15 +82,15 @@ public class ForgetActivity extends BaseActivity {
     }
 
     private void initData() {
-        db = null;
         try {
+            db = x.getDb(((TriumphApplication) getApplication()).getDaoConfig());
             User checkUser = db.selector(User.class).findFirst();
             if (checkUser != null) {
                 user = checkUser;
             }
         } catch (DbException e) {
             e.printStackTrace();
-            T.s("Get user data failed");
+            System.out.println("Get user data failed");
         }
     }
 }

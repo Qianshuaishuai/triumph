@@ -46,6 +46,7 @@
                 android:gravity="center_vertical"
                 android:paddingLeft="12dip"
                 android:paddingRight="12dip"
+                android:textColor="#000000"
                 android:textSize="24dip" />
         </LinearLayout>
 
@@ -72,8 +73,10 @@
                 android:layout_marginLeft="12dip"
                 android:background="@drawable/shape_editor_background"
                 android:gravity="center_vertical"
+                android:inputType="textPassword"
                 android:paddingLeft="12dip"
                 android:paddingRight="12dip"
+                android:textColor="#000000"
                 android:textSize="24dip" />
         </LinearLayout>
 
@@ -100,8 +103,10 @@
                 android:layout_marginLeft="30dip"
                 android:background="@drawable/shape_editor_background"
                 android:gravity="center_vertical"
+                android:inputType="textPassword"
                 android:paddingLeft="12dip"
                 android:paddingRight="12dip"
+                android:textColor="#000000"
                 android:textSize="24dip" />
         </LinearLayout>
     </LinearLayout>

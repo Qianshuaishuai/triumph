@@ -40,7 +40,7 @@ public class RegisterActivity extends BaseActivity {
 
     @Event(R.id.regist)
     private void regist(View view) {
-        if (password.getText().toString().equals(confirmPassword.getText().toString())) {
+        if (!password.getText().toString().equals(confirmPassword.getText().toString())) {
             T.s("Two passwords are inconsistent");
             return;
         }
@@ -88,8 +88,8 @@ public class RegisterActivity extends BaseActivity {
     }
 
     private void register(User user) {
-        DbManager db = null;
         try {
+            DbManager db = x.getDb(((TriumphApplication) getApplication()).getDaoConfig());
             User checkUser = db.selector(User.class).where("username", "in", new String[]{user.getUsername()}).findFirst();
             if (checkUser != null) {
                 T.s("User name is used");

@@ -4,6 +4,9 @@
 
     <uses-permission android:name="android.permission.INTERNET" />
 
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
     <application
         android:name=".TriumphApplication"
         android:allowBackup="true"
@@ -12,32 +15,62 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.NoActionBar">
-        <activity android:name=".ui.main.MotorSetupActivity"></activity>
-        <activity android:name=".ui.profile.ModeActivity" />
-        <activity android:name=".ui.other.InfoActivity" />
-        <activity android:name=".ui.profile.SystemSettingActivity" />
-        <activity android:name=".ui.profile.SettingActivity" />
-        <activity android:name=".ui.other.AboutActivity" />
-        <activity android:name=".ui.other.HelpActivity" />
-        <activity android:name=".ui.other.ContactActivity" />
-        <activity android:name=".ui.main.ShutDownActivity" />
-        <activity android:name=".ui.main.StopActivity" />
-        <activity android:name=".ui.user.UserProfileActivity" />
-        <activity android:name=".ui.user.ForgetActivity" />
-        <activity android:name=".ui.user.SignInActivity">
+        <activity
+            android:name=".ui.main.MotorSetupActivity"
+            android:screenOrientation="landscape"></activity>
+        <activity
+            android:name=".ui.profile.ModeActivity"
+            android:screenOrientation="landscape"></activity>
+        <activity
+            android:name=".ui.other.InfoActivity"
+            android:screenOrientation="landscape"></activity>
+        <activity
+            android:name=".ui.profile.SystemSettingActivity"
+            android:screenOrientation="landscape"></activity>
+        <activity
+            android:name=".ui.profile.SettingActivity"
+            android:screenOrientation="landscape"></activity>
+        <activity
+            android:name=".ui.other.AboutActivity"
+            android:screenOrientation="landscape"></activity>
+        <activity
+            android:name=".ui.other.HelpActivity"
+            android:screenOrientation="landscape"></activity>
+        <activity
+            android:name=".ui.other.ContactActivity"
+            android:screenOrientation="landscape"></activity>
+        <activity
+            android:name=".ui.main.ShutDownActivity"
+            android:screenOrientation="landscape"></activity>
+        <activity
+            android:name=".ui.main.StopActivity"
+            android:screenOrientation="landscape"></activity>
+        <activity
+            android:name=".ui.user.UserProfileActivity"
+            android:screenOrientation="landscape"></activity>
+        <activity
+            android:name=".ui.user.ForgetActivity"
+            android:screenOrientation="landscape"></activity>
+        <activity
+            android:name=".ui.user.SignInActivity"
+            android:screenOrientation="landscape"></activity>
+        <activity
+            android:name=".ui.user.RegisterActivity"
+            android:screenOrientation="landscape">
 
         </activity>
-        <activity android:name=".ui.user.RegisterActivity">
+        <activity
+            android:name=".ui.main.WelcomeActivity"
+            android:screenOrientation="landscape">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ui.main.WelcomeActivity">
-
-        </activity>
-        <activity android:name=".MainActivity">
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="landscape">
 
         </activity>
     </application>

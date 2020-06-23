@@ -6,6 +6,7 @@ import android.view.View;
 import android.widget.TextView;
 
 import com.babyraising.triumph.R;
+import com.babyraising.triumph.TriumphApplication;
 import com.babyraising.triumph.base.BaseActivity;
 import com.babyraising.triumph.bean.User;
 import com.babyraising.triumph.util.T;
@@ -15,6 +16,7 @@ import org.xutils.ex.DbException;
 import org.xutils.view.annotation.ContentView;
 import org.xutils.view.annotation.Event;
 import org.xutils.view.annotation.ViewInject;
+import org.xutils.x;
 
 @ContentView(R.layout.activity_user_profile)
 public class UserProfileActivity extends BaseActivity {
@@ -48,8 +50,8 @@ public class UserProfileActivity extends BaseActivity {
     }
 
     private void initData() {
-        DbManager db = null;
         try {
+            DbManager db = x.getDb(((TriumphApplication) getApplication()).getDaoConfig());
             User checkUser = db.selector(User.class).findFirst();
             if (checkUser != null) {
                 user = checkUser;
@@ -69,7 +71,7 @@ public class UserProfileActivity extends BaseActivity {
                         showPwd = showPwd + "*";
                     }
 
-                    showPwd = showPwd + oldPassword.substring(pwdLength - 3, pwdLength - 1);
+                    showPwd = showPwd + oldPassword.substring(pwdLength - 3, pwdLength);
                     password.setText(showPwd);
                 }
             }

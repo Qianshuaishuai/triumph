@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#ffffff"
     tools:context=".ui.main.MotorSetupActivity">
 
     <LinearLayout
@@ -41,6 +42,7 @@
             android:layout_width="0dip"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:gravity="center_horizontal"
             android:text="Use"
             android:textColor="#3CB371"
             android:textSize="24dip"
@@ -51,6 +53,7 @@
             android:layout_width="0dip"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:gravity="center_horizontal"
             android:text="Stop all"
             android:textColor="#3CB371"
             android:textSize="24dip"
@@ -62,6 +65,7 @@
             android:layout_width="0dip"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:gravity="center_horizontal"
             android:text="Running all"
             android:textColor="#3CB371"
             android:textSize="24dip"
@@ -72,6 +76,7 @@
             android:layout_width="0dip"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:gravity="center_horizontal"
             android:text="Help?"
             android:textColor="#3CB371"
             android:textSize="24dip"
@@ -82,9 +87,20 @@
             android:layout_width="0dip"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:gravity="center_horizontal"
             android:text="Saved Mode"
             android:textColor="#3CB371"
             android:textSize="24dip"
             android:textStyle="bold" />
     </LinearLayout>
+
+    <TextView
+        android:id="@+id/count_down"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textColor="#ff0000"
+        android:textSize="224dip"
+        android:textStyle="bold"
+        android:visibility="gone" />
 </RelativeLayout>

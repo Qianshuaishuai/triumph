@@ -49,13 +49,13 @@
                     android:src="@mipmap/up" />
 
                 <TextView
-                    android:id="@+id/audio_level"
+                    android:id="@+id/audio_level_tv"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="12dip"
                     android:layout_marginRight="12dip"
                     android:gravity="center_horizontal"
-                    android:text="3"
+                    android:text="0"
                     android:textColor="#ffffff"
                     android:textSize="84dip"
                     android:textStyle="bold" />
@@ -97,13 +97,13 @@
                     android:src="@mipmap/up" />
 
                 <TextView
-                    android:id="@+id/brightness_level"
+                    android:id="@+id/brightness_level_tv"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="12dip"
                     android:layout_marginRight="12dip"
                     android:gravity="center_horizontal"
-                    android:text="9"
+                    android:text="0"
                     android:textColor="#ffffff"
                     android:textSize="84dip"
                     android:textStyle="bold" />
@@ -145,13 +145,13 @@
                     android:src="@mipmap/up" />
 
                 <TextView
-                    android:id="@+id/count_down"
+                    android:id="@+id/count_down_tv"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="12dip"
                     android:layout_marginRight="12dip"
                     android:gravity="center_horizontal"
-                    android:text="3"
+                    android:text="0"
                     android:textColor="#ffffff"
                     android:textSize="84dip"
                     android:textStyle="bold" />

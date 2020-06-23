@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 
 import com.babyraising.triumph.R;
+import com.babyraising.triumph.TriumphApplication;
 import com.babyraising.triumph.base.BaseActivity;
 import com.babyraising.triumph.bean.User;
 import com.babyraising.triumph.ui.user.RegisterActivity;
@@ -16,6 +17,7 @@ import org.xutils.DbManager;
 import org.xutils.ex.DbException;
 import org.xutils.view.annotation.ContentView;
 import org.xutils.view.annotation.Event;
+import org.xutils.x;
 
 @ContentView(R.layout.activity_info)
 public class InfoActivity extends BaseActivity {
@@ -57,15 +59,15 @@ public class InfoActivity extends BaseActivity {
     }
 
     private void initData() {
-        DbManager db = null;
         try {
+            DbManager db = x.getDb(((TriumphApplication) getApplication()).getDaoConfig());
             User checkUser = db.selector(User.class).findFirst();
             if (checkUser != null) {
                 user = checkUser;
             }
         } catch (DbException e) {
             e.printStackTrace();
-            T.s("Get user data failed");
+            System.out.println("Get user data failed");
         }
     }
 }

@@ -36,7 +36,7 @@ public class SignInActivity extends BaseActivity {
     @Event(R.id.sign)
     private void sign(View view) {
         if (TextUtils.isEmpty(password.getText().toString())) {
-            T.s("Password Name cannot be empty");
+            T.s("Password cannot be empty");
             return;
         }
 
@@ -63,8 +63,8 @@ public class SignInActivity extends BaseActivity {
     }
 
     private void initData() {
-        DbManager db = null;
         try {
+            DbManager db = x.getDb(((TriumphApplication) getApplication()).getDaoConfig());
             User checkUser = db.selector(User.class).findFirst();
             if (checkUser != null) {
                 username.setText(checkUser.getUsername());
@@ -81,7 +81,7 @@ public class SignInActivity extends BaseActivity {
     }
 
     private void sign() {
-        if (user != null && user.getPassword().equals(password.getText().toString())) {
+        if (user != null && (user.getPassword().equals(password.getText().toString()))) {
             T.s("Sign success");
             Intent intent = new Intent(this, MotorSetupActivity.class);
             startActivity(intent);

@@ -34,11 +34,11 @@
             android:textSize="72dip"
             android:textStyle="bold" />
 
-        <view
+        <View
             android:layout_width="600dip"
             android:layout_height="8dip"
             android:layout_marginTop="24dip"
-            android:background="#ffffff"></view>
+            android:background="#ffffff"></View>
 
         <TextView
             android:layout_width="match_parent"
@@ -51,10 +51,10 @@
             android:textSize="24dip"
             android:textStyle="bold" />
 
-        <view
+        <View
             android:layout_width="600dip"
             android:layout_height="8dip"
-            android:background="#ffffff"></view>
+            android:background="#ffffff"></View>
 
         <TextView
             android:layout_width="match_parent"

@@ -79,5 +79,32 @@ public class TriumphApplication extends Application {
     public int getFirstGo() {
         return sp.getInt("first", 0);
     }
+
+    public void saveAudioLevel(int level) {
+        editor.putInt("audio-level", level);
+        editor.commit();
+    }
+
+    public int getAudioLevel() {
+        return sp.getInt("audio-level", 0);
+    }
+
+    public void saveCountDown(int level) {
+        editor.putInt("count-down", level);
+        editor.commit();
+    }
+
+    public int getCountDown() {
+        return sp.getInt("count-down", 0);
+    }
+
+    public void saveBrightnessLevel(int level) {
+        editor.putInt("brightness-level", level);
+        editor.commit();
+    }
+
+    public int getBrightnessLevel() {
+        return sp.getInt("brightness-level", 0);
+    }
 }
 
