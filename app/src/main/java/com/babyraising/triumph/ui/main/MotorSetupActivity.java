@@ -36,7 +36,8 @@ public class MotorSetupActivity extends BaseActivity {
 
     @Event(R.id.stop_all)
     private void stopAll(View view) {
-
+        Intent intent = new Intent(this, StopActivity.class);
+        startActivity(intent);
     }
 
     @Event(R.id.running_all)
@@ -76,7 +77,9 @@ public class MotorSetupActivity extends BaseActivity {
     @Override
     protected void onDestroy() {
         super.onDestroy();
-        timer.cancel();
+        if (timer != null){
+            timer.cancel();
+        }
         countDown.setVisibility(View.GONE);
     }
 

@@ -35,6 +35,6 @@ public class HelpActivity extends BaseActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        x.image().bind(ivMain, "assets://help.png");
+        x.image().bind(ivMain, "assets://helpBig.png");
     }
 }

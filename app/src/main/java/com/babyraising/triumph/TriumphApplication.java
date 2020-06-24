@@ -106,5 +106,23 @@ public class TriumphApplication extends Application {
     public int getBrightnessLevel() {
         return sp.getInt("brightness-level", 0);
     }
+
+    public void saveUseAllTime(int useAllTime) {
+        editor.putInt("use-all-time", useAllTime);
+        editor.commit();
+    }
+
+    public int getUseAllTime() {
+        return sp.getInt("use-all-time", 0);
+    }
+
+    public void saveCurrentTime(String currentTime) {
+        editor.putString("current-time", currentTime);
+        editor.commit();
+    }
+
+    public String getCurrentTime() {
+        return sp.getString("current-time", "");
+    }
 }
 

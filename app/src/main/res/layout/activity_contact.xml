@@ -24,11 +24,11 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/tip"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="15dip"
+        android:layout_marginTop="24dip"
         android:gravity="center_horizontal"
         android:text="TRIUMPH SYSTEMS,INC.710 NORTH TUCKER BLVD STE.315A SAINT LOUIS,MO 63101"
         android:textColor="#ffffff"
-        android:textSize="24dip"
+        android:textSize="32dip"
         android:textStyle="bold" />
 
     <TextView
@@ -37,11 +37,11 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/tip1"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="30dip"
+        android:layout_marginTop="24dip"
         android:gravity="center_horizontal"
         android:text="URL: WWW.TRIUMPH-SYSTEMS.COM"
         android:textColor="#ffffff"
-        android:textSize="24dip"
+        android:textSize="32dip"
         android:textStyle="bold" />
 
     <TextView

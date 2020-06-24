@@ -1,11 +1,16 @@
 package com.babyraising.triumph.ui.main;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.text.TextUtils;
 import android.view.View;
 
 import com.babyraising.triumph.R;
+import com.babyraising.triumph.TriumphApplication;
 import com.babyraising.triumph.base.BaseActivity;
+import com.babyraising.triumph.ui.profile.SystemSettingActivity;
+import com.babyraising.triumph.util.TimeUtil;
 
 import org.xutils.view.annotation.ContentView;
 import org.xutils.view.annotation.Event;
@@ -21,6 +26,8 @@ public class StopActivity extends BaseActivity {
     @Event(R.id.shutDown)
     private void shutDown(View view) {
 
+        Intent intent = new Intent(this, ShutDownActivity.class);
+        startActivity(intent);
     }
 
     @Override
