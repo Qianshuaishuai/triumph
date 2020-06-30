@@ -5,13 +5,18 @@ import android.content.Context;
 import android.content.SharedPreferences;
 import android.util.Log;
 
+import com.babyraising.triumph.bean.BigMode;
+import com.babyraising.triumph.bean.Motor;
 import com.babyraising.triumph.util.T;
 import com.google.gson.Gson;
+import com.google.gson.reflect.TypeToken;
 
 import org.xutils.DbManager;
 import org.xutils.x;
 
 import java.io.File;
+import java.util.ArrayList;
+import java.util.List;
 
 public class TriumphApplication extends Application {
     private String TAG = "TriumphApplication";
@@ -33,6 +38,44 @@ public class TriumphApplication extends Application {
 
         initSp();
         initDb();
+        initModeConfig();
+        initBigModeConfig();
+        initMotorConfig();
+    }
+
+    private void initModeConfig() {
+        List<String> checkList = getModeList();
+        if (checkList == null || checkList.size() == 0) {
+            List<String> newList = new ArrayList<>();
+            newList.add("A: Simple Mode");
+            newList.add("B: Holstered Mode");
+            newList.add("C: Unholstered Mode");
+            newList.add("D: User Upload Mode");
+            setModeList(newList);
+        }
+    }
+
+    private void initBigModeConfig() {
+        int index = getBigModeIndex();
+        List<BigMode> bigModeList = getBigModeList();
+        if (index >= 0 && bigModeList != null && bigModeList.size() > 0) {
+            setMotorList(bigModeList.get(index).getMotorList());
+        }
+    }
+
+    private void initMotorConfig() {
+        List<Motor> checkList = getMotorList();
+        if (checkList == null || checkList.size() == 0) {
+            List<Motor> newList = new ArrayList<>();
+            for (int i = 0; i < 8; i++) {
+                Motor motor = new Motor();
+                motor.setMode(0);
+                motor.setName("SN");
+                motor.setStatus(1);
+                newList.add(motor);
+            }
+            setMotorList(newList);
+        }
     }
 
     private void initDb() {
@@ -123,6 +166,49 @@ public class TriumphApplication extends Application {
 
     public String getCurrentTime() {
         return sp.getString("current-time", "");
+    }
+
+    public List<Motor> getMotorList() {
+        return gson.fromJson(sp.getString("motor-list", ""), new TypeToken<List<Motor>>() {
+        }.getType());
+    }
+
+    public void setMotorList(List<Motor> list) {
+        String beanString = gson.toJson(list);
+        editor.putString("motor-list", beanString);
+        editor.commit();
+    }
+
+    public List<BigMode> getBigModeList() {
+        return gson.fromJson(sp.getString("bigMode-list", ""), new TypeToken<List<BigMode>>() {
+        }.getType());
+    }
+
+    public void setBigModeList(List<BigMode> list) {
+        String beanString = gson.toJson(list);
+        editor.putString("bigMode-list", beanString);
+        editor.commit();
+    }
+
+    public List<String> getModeList() {
+        return gson.fromJson(sp.getString("mode-list", ""), new TypeToken<List<String>>() {
+        }.getType());
+    }
+
+    public void setModeList(List<String> list) {
+        String beanString = gson.toJson(list);
+        editor.putString("mode-list", beanString);
+        editor.commit();
+    }
+
+
+    public void saveBigModeIndex(int index) {
+        editor.putInt("big-mode-index", index);
+        editor.commit();
+    }
+
+    public int getBigModeIndex() {
+        return sp.getInt("big-mode-index", 0);
     }
 }
 
